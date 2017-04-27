@@ -1,0 +1,23 @@
+h1, #cartImg{
+  background-color: yellow;
+  margin-top: 0
+  display: block;
+}
+
+
+
+#price{
+  text-align: right;
+}
+
+#description1{
+  padding:0;
+}
+
+.itemInfo{
+  border-top-style:solid;
+}
+
+#item6{
+  border-bottom-style: solid;
+}
