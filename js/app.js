@@ -10,6 +10,7 @@ for(var i = 0; i<shoppingList.length; i++){
   ITEM 1
   ****************************************************/
   
+  
   var prod1Name = document.getElementById("title1");
   prod1Name.innerHTML = shoppingList[0].product;
 
@@ -70,6 +71,7 @@ for(var i = 0; i<shoppingList.length; i++){
   ITEM 5
   ****************************************************/
 
+  
   var prod1Name = document.getElementById("title5");
   prod1Name.innerHTML = shoppingList[4].product;
 
@@ -97,20 +99,29 @@ for(var i = 0; i<shoppingList.length; i++){
 }
 
    /***************************************************
-  ITEM 5
+  SUBTOTAL
   ****************************************************/
 
-for(var i = 0; i<shoppingList[i].price;i++){
-  console.log(shoppingList[i].price);
-  total = 0;
-  total += shoppingList[i].price;
-  console.log(total);
- 
 
-var newSub = document.getElementById("subPrice");
-newSub.innerHTML = total;
+var total = 0;
+for(var j = 0; j<shoppingList.length;j++){
+  console.log(shoppingList[j].price);
+  total += shoppingList[j].price;
 
 }
+console.log(total);
+
+var newTotal = document.getElementById("subPrice");
+newTotal.innerHTML = total;
+
+
+
+
+
+  
+ 
+
+
 
 
 
