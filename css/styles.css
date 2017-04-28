@@ -4,10 +4,13 @@ h1, #cartImg{
   display: block;
 }
 
+.desc{
+  display: block;
+}
 
-
-#price{
-  text-align: right;
+.price{
+  text-align: left;
+  font-size: 25px;
 }
 
 #description1{
@@ -20,4 +23,17 @@ h1, #cartImg{
 
 #item6{
   border-bottom-style: solid;
+}
+
+.img{
+  display:inline;
+  height:5px;
+  width: 5px;
+  ;
+}
+
+.title{
+  background-color: blue;
+  padding:0px;
+
 }

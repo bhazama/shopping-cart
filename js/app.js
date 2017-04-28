@@ -11,17 +11,17 @@ for(var i = 0; i<shoppingList.length; i++){
   ****************************************************/
   
   
-  var prod1Name = document.getElementById("title1");
-  prod1Name.innerHTML = shoppingList[0].product;
-
+  var product = document.getElementById("title1");
+  title1.innerHTML = shoppingList[0].product;
+  
   var prod1Description = document.getElementById("description1");
-  prod1Description.innerHTML = shoppingList[0].description;
+  prod1Description.innerHTML= shoppingList[0].description;
 
   var prod1Price = document.getElementById("price1");
   prod1Price.innerHTML = shoppingList[0].price;
 
   var prod1Img = document.getElementById("img1");
-  prod1Img.innerHTML = "<img src=https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/ae4ef8dc-b6c6-4b23-b2e7-9cbe0d169ea1.jpg._CB285945496__SR300,300_.jpg alt = finger brush id=img1";
+  prod1Img.innerHTML = "<img src=images/fingerbrush.jpg>";
 
 
   /***************************************************
@@ -30,15 +30,16 @@ for(var i = 0; i<shoppingList.length; i++){
 
 
   var prod2Name = document.getElementById("title2");
-  prod1Name.innerHTML = shoppingList[1].product;
+  prod2Name.innerHTML = shoppingList[1].product;
 
   var prod2Description = document.getElementById("description2");
-  prod1Description.innerHTML = shoppingList[1].description;
+  prod2Description.innerHTML = shoppingList[1].description;
 
   var prod2Price = document.getElementById("price2");
-  prod1Price.innerHTML = shoppingList[1].price;
+  prod2Price.innerHTML = shoppingList[1].price;
 
   var prod2Img = document.getElementById("img2");
+  prod2Img.innerHTML = "<img src=https://images-na.ssl-images-amazon.com/images/I/41KB1X0G6QL.jpg>";
   
 
   
@@ -48,15 +49,16 @@ for(var i = 0; i<shoppingList.length; i++){
   
 
   var prod3Name = document.getElementById("title3");
-  prod1Name.innerHTML = shoppingList[2].product;
+  prod3Name.innerHTML = shoppingList[2].product;
 
   var prod3Description = document.getElementById("description3");
-  prod1Description.innerHTML = shoppingList[2].description;
+  prod3Description.innerHTML = shoppingList[2].description;
 
   var prod3Price = document.getElementById("price3");
-  prod1Price.innerHTML = shoppingList[2].price;
+  prod3Price.innerHTML = shoppingList[2].price;
 
   var prod3Img = document.getElementById("img3");
+  prod3Img.innerHTML = "<img src = http://cdn.trendhunterstatic.com/phpthumbnails/253/253437/253437_1_230c.jpeg>";
 
   
 
@@ -66,15 +68,16 @@ for(var i = 0; i<shoppingList.length; i++){
 
 
   var prod4Name = document.getElementById("title4");
-  prod1Name.innerHTML = shoppingList[3].product;
+  prod4Name.innerHTML = shoppingList[3].product;
 
   var prod4Description = document.getElementById("description4");
-  prod1Description.innerHTML = shoppingList[3].description;
+  prod4Description.innerHTML = shoppingList[3].description;
 
   var prod4Price = document.getElementById("price4");
-  prod1Price.innerHTML = shoppingList[3].price;
+  prod4Price.innerHTML = shoppingList[3].price;
 
   var prod4Img = document.getElementById("img4");
+  prod4Img.innerHTML = "<img src = http://www.asseenontvandbeyond.com/thumbnail.asp?file=assets/images/woof-washer-360.jpg&maxx=300&maxy=0>";
 
 
    /***************************************************
@@ -83,15 +86,16 @@ for(var i = 0; i<shoppingList.length; i++){
 
   
   var prod5Name = document.getElementById("title5");
-  prod1Name.innerHTML = shoppingList[4].product;
+  prod5Name.innerHTML = shoppingList[4].product;
 
   var prod5Description = document.getElementById("description5");
-  prod1Description.innerHTML = shoppingList[4].description;
+  prod5Description.innerHTML = shoppingList[4].description;
 
   var prod5Price = document.getElementById("price5");
-  prod1Price.innerHTML = shoppingList[4].price;
+  prod5Price.innerHTML = shoppingList[4].price;
 
   var prod5Img = document.getElementById("img5");
+  prod5Img.innerHTML = "<img src = http://ep.yimg.com/ay/yhst-136372476553304/verseo-sauna-pants-sauna-shorts-13.png>";
 
  
  /***************************************************
@@ -100,15 +104,16 @@ for(var i = 0; i<shoppingList.length; i++){
 
 
   var prod6Name = document.getElementById("title6");
-  prod1Name.innerHTML = shoppingList[5].product;
+  prod6Name.innerHTML = shoppingList[5].product;
 
   var prod6Description = document.getElementById("description6");
-  prod1Description.innerHTML = shoppingList[5].description;
+  prod6Description.innerHTML = shoppingList[5].description;
 
   var prod6Price = document.getElementById("price6");
-  prod1Price.innerHTML = shoppingList[5].price;
+  prod6Price.innerHTML = shoppingList[5].price;
 
   var prod6Img = document.getElementById("img6");
+  prod6Img.innerHTML = "<img src = https://ak1.ostkcdn.com/images/products/P10048158.jpg>";
    
 }
 
@@ -129,6 +134,19 @@ var newTotal = document.getElementById("subPrice");
 newTotal.innerHTML = total;
 
 
+var classElem = document.getElementById("itemInfo");
+for (var i = 0; i<classElem.length; i++){
+  classElem[i].addEventListener("click",  toggleSwitch);
+}
+
+function toggleSwitch(){
+  var descElem = querySelectorAll(".desc")[0];
+  if(descElem.style.display === "none"){
+    descElem.style.display = "block";
+  }else{
+    descElem.style.display = "block";
+  }
+}
 
 
 
